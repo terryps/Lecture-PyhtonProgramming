@@ -38,7 +38,7 @@ cur = time.time()
 print(is_all_prime(lst))
 print(time.time()-cur)
 
-n = input(\"enter number: \")
+n = input("enter number: ")
 n = int(n)
 
 def psum(n):
@@ -51,5 +51,5 @@ def psum(n):
     for j in range(2,len(sum_lst)):
         for i in range(0, j-1):
             if is_prime(sum_lst[j]-sum_lst[i]):
-                print(\"{0} {1}\".format(lst[i:j],sum_lst[j]-sum_lst[i]))
+                print("{0} {1}".format(lst[i:j],sum_lst[j]-sum_lst[i]))
 psum(n)
